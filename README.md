@@ -2,6 +2,10 @@
 
 **KV-Store** is a REST-API service that works as an in memory key-value store.
 
+[![Build Docker Image](https://github.com/semihsemih/kv-store/actions/workflows/container.yml/badge.svg)](https://github.com/semihsemih/kv-store/actions/workflows/container.yml)
+[![Check Lint with golangci-lint](https://github.com/semihsemih/kv-store/actions/workflows/lint.yml/badge.svg)](https://github.com/semihsemih/kv-store/actions/workflows/lint.yml)
+[![Run Tests](https://github.com/semihsemih/kv-store/actions/workflows/test.yml/badge.svg)](https://github.com/semihsemih/kv-store/actions/workflows/test.yml)
+
 ## Installation
 You need require **Docker** and **Git**
 
@@ -13,4 +17,18 @@ git clone https://github.com/semihsemih/kv-store
 2. Run the docker-compose.yml file and start the server
 ```
 docker-compose up -d
+```
+
+## Usage
+### Set new key-value
+```
+/set?key=foo&value=bar
+```
+### Get value given by key
+```
+/get?key=foo
+```
+### Flush all storage
+```
+/flush
 ```
