@@ -19,7 +19,13 @@ git clone https://github.com/semihsemih/kv-store
 docker-compose up -d
 ```
 
+## Use KV-Store
+The application is deployed on digitalocean.
+
+[KV-Store](https://kv-store-3bgvz.ondigitalocean.app)
+
 ## Usage
+The ``kv-store`` uses port ``:8080`` as default.
 ### Set new key-value
 ```
 /set?key=foo&value=bar
