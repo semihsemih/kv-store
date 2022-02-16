@@ -32,3 +32,8 @@ docker-compose up -d
 ```
 /flush
 ```
+
+## Logging and Data Storage
+When you start the application for the first time, a folder named ``store`` is created. Folder contains server.log file and data.json file. 
+- The server.log file is the log file that logging incoming requests to the server.
+- The data.json file is the file that stores the key-values and data is read when the system is turned on.
